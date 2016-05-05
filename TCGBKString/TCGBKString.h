@@ -11,3 +11,6 @@
 @interface TCGBKString : NSObject
 
 @end
+
+
+NSString * tcGBKString(NSString *);

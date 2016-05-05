@@ -9,7 +9,20 @@
 /* Begin PBXBuildFile section */
 		EAB20A851CDB38ED00C926FA /* TCGBKString.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAB20A841CDB38ED00C926FA /* TCGBKString.h */; };
 		EAB20A871CDB38ED00C926FA /* TCGBKString.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB20A861CDB38ED00C926FA /* TCGBKString.m */; };
+		EAB20A941CDB397100C926FA /* TestsTCGBKString.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB20A931CDB397100C926FA /* TestsTCGBKString.m */; };
+		EAB20A961CDB397100C926FA /* libTCGBKString.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB20A811CDB38ED00C926FA /* libTCGBKString.a */; };
+		EAB20AA11CDB3D8B00C926FA /* unknown encoding.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB20AA01CDB3D8B00C926FA /* unknown encoding.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAB20A971CDB397100C926FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB20A791CDB38ED00C926FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAB20A801CDB38ED00C926FA;
+			remoteInfo = TCGBKString;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		EAB20A7F1CDB38ED00C926FA /* CopyFiles */ = {
@@ -28,6 +41,10 @@
 		EAB20A811CDB38ED00C926FA /* libTCGBKString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTCGBKString.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB20A841CDB38ED00C926FA /* TCGBKString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCGBKString.h; sourceTree = "<group>"; };
 		EAB20A861CDB38ED00C926FA /* TCGBKString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCGBKString.m; sourceTree = "<group>"; };
+		EAB20A911CDB397100C926FA /* TestsTCGBKString.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestsTCGBKString.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB20A931CDB397100C926FA /* TestsTCGBKString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestsTCGBKString.m; sourceTree = "<group>"; };
+		EAB20A951CDB397100C926FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB20AA01CDB3D8B00C926FA /* unknown encoding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unknown encoding.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,13 +55,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAB20A8E1CDB397100C926FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB20A961CDB397100C926FA /* libTCGBKString.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		EAB20A781CDB38ED00C926FA = {
 			isa = PBXGroup;
 			children = (
+				EAB20A9F1CDB3D7D00C926FA /* Resouces */,
 				EAB20A831CDB38ED00C926FA /* TCGBKString */,
+				EAB20A921CDB397100C926FA /* TestsTCGBKString */,
 				EAB20A821CDB38ED00C926FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				EAB20A811CDB38ED00C926FA /* libTCGBKString.a */,
+				EAB20A911CDB397100C926FA /* TestsTCGBKString.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +92,23 @@
 				EAB20A861CDB38ED00C926FA /* TCGBKString.m */,
 			);
 			path = TCGBKString;
+			sourceTree = "<group>";
+		};
+		EAB20A921CDB397100C926FA /* TestsTCGBKString */ = {
+			isa = PBXGroup;
+			children = (
+				EAB20A931CDB397100C926FA /* TestsTCGBKString.m */,
+				EAB20A951CDB397100C926FA /* Info.plist */,
+			);
+			path = TestsTCGBKString;
+			sourceTree = "<group>";
+		};
+		EAB20A9F1CDB3D7D00C926FA /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				EAB20AA01CDB3D8B00C926FA /* unknown encoding.png */,
+			);
+			name = Resouces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +131,24 @@
 			productReference = EAB20A811CDB38ED00C926FA /* libTCGBKString.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		EAB20A901CDB397100C926FA /* TestsTCGBKString */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB20A991CDB397100C926FA /* Build configuration list for PBXNativeTarget "TestsTCGBKString" */;
+			buildPhases = (
+				EAB20A8D1CDB397100C926FA /* Sources */,
+				EAB20A8E1CDB397100C926FA /* Frameworks */,
+				EAB20A8F1CDB397100C926FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAB20A981CDB397100C926FA /* PBXTargetDependency */,
+			);
+			name = TestsTCGBKString;
+			productName = TestsTCGBKString;
+			productReference = EAB20A911CDB397100C926FA /* TestsTCGBKString.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +159,9 @@
 				ORGANIZATIONNAME = TCTONY;
 				TargetAttributes = {
 					EAB20A801CDB38ED00C926FA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					EAB20A901CDB397100C926FA = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -113,9 +179,21 @@
 			projectRoot = "";
 			targets = (
 				EAB20A801CDB38ED00C926FA /* TCGBKString */,
+				EAB20A901CDB397100C926FA /* TestsTCGBKString */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAB20A8F1CDB397100C926FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB20AA11CDB3D8B00C926FA /* unknown encoding.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAB20A7D1CDB38ED00C926FA /* Sources */ = {
@@ -126,7 +204,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAB20A8D1CDB397100C926FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB20A941CDB397100C926FA /* TestsTCGBKString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAB20A981CDB397100C926FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAB20A801CDB38ED00C926FA /* TCGBKString */;
+			targetProxy = EAB20A971CDB397100C926FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EAB20A881CDB38ED00C926FA /* Debug */ = {
@@ -229,6 +323,26 @@
 			};
 			name = Release;
 		};
+		EAB20A9A1CDB397100C926FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestsTCGBKString/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.tctony.TestsTCGBKString;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EAB20A9B1CDB397100C926FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestsTCGBKString/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.tctony.TestsTCGBKString;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -246,6 +360,14 @@
 			buildConfigurations = (
 				EAB20A8B1CDB38ED00C926FA /* Debug */,
 				EAB20A8C1CDB38ED00C926FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAB20A991CDB397100C926FA /* Build configuration list for PBXNativeTarget "TestsTCGBKString" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB20A9A1CDB397100C926FA /* Debug */,
+				EAB20A9B1CDB397100C926FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
